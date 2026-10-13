@@ -9,7 +9,7 @@
 
 class Book {
 public:
-    Book(std::string title, std::string author, int ISBN) : title(title), author(author), ISBN(ISBN), available(true), returnDate(0) {}
+    Book(std::string title, std::string author, int ISBN) : title(title), author(author), ISBN(ISBN), available(true) {}
     void setAvailable(bool newVal) {available = newVal;}
     std::string getTitle() {return title;}
     std::string getAuthor() {return author;}

@@ -7,7 +7,19 @@
 
 #include "Lender.h"
 
+
 class Library {
+public:
+    Library() : lastID(0) {}
+    void addBook();
+    void removeBook(Book*);
+    void removeBook(int ISBN);
+    void addUser();
+    void removeUser();
+private:
+    std::vector<Book> library;
+    std::vector<Lender> users;
+    int lastID;
 };
 
 

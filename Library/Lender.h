@@ -5,13 +5,12 @@
 #ifndef PRACTICE_ASSIGNMENTS_LENDER_H
 #define PRACTICE_ASSIGNMENTS_LENDER_H
 
-#include <string>
 #include <vector>
 #include "Book.h"
 
 class Lender {
 public:
-    Lender(int age, std::string firstName, std::string lastName) : age(age), firstName(firstName), lastName(lastName), numBorrowed(0) {}
+    Lender(int age, std::string firstName, std::string lastName, int ID) : age(age), firstName(firstName), lastName(lastName), numBorrowed(0), ID(ID) {}
     void borrowBook(Book* newBook, int maxBooks);
     void returnBook(Book* newBook);
     void setNumBorrowed(int newNum) {numBorrowed = newNum;}
@@ -25,6 +24,7 @@ private:
     const std::string lastName;
     std::vector<Book*> borrowed;
     int numBorrowed;
+    const int ID;
 };
 
 
