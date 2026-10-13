@@ -6,10 +6,12 @@
 #define PRACTICE_FOR_EXAM_CP_BOOK_H
 
 #include <string>
+#include <iostream>
 
 class Book {
 public:
     Book(std::string title, std::string author, int ISBN) : title(title), author(author), ISBN(ISBN), available(true) {}
+    void printBook();
     void setAvailable(bool newVal) {available = newVal;}
     std::string getTitle() {return title;}
     std::string getAuthor() {return author;}
