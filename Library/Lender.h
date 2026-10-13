@@ -6,6 +6,7 @@
 #define PRACTICE_ASSIGNMENTS_LENDER_H
 
 #include <vector>
+#include <iostream>
 #include "Book.h"
 
 class Lender {

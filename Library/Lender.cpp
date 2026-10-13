@@ -3,7 +3,6 @@
 //
 
 #include "Lender.h"
-#include <iostream>
 
 void Lender::borrowBook(Book* newBook, int maxBooks) {
     if (newBook->getAvailable()) {
