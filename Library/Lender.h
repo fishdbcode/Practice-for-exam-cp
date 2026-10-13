@@ -13,6 +13,7 @@ class Lender {
 public:
     Lender(int age, std::string firstName, std::string lastName) : age(age), firstName(firstName), lastName(lastName), numBorrowed(0) {}
     void borrowBook(Book* newBook, int maxBooks);
+    void returnBook(Book* newBook);
     void setNumBorrowed(int newNum) {numBorrowed = newNum;}
     int getAge() {return age;}
     std::string getFirstName() {return firstName;}
