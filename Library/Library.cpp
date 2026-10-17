@@ -95,6 +95,10 @@ Lender* Library::logIn() {
             std::cin.clear();
         }
     }
+    else {
+        std::cout << "Invalid ID" << std::endl;
+        std::cin.clear();
+    }
     return nullptr;
 }
 
