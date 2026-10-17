@@ -37,7 +37,7 @@ void Lender::returnBook(Book* newBook) {
 }
 
 void Lender::printBorrowed() {
-    for (int i = 1; i < borrowed.size(); ++i) {
+    for (int i = 0; i < borrowed.size(); ++i) {
         borrowed.at(i)->printBook();
     }
 }
