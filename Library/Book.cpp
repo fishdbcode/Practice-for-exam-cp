@@ -5,5 +5,5 @@
 #include "Book.h"
 
 void Book::printBook() {
-    std::cout << ": Author is " << author << ". Title is: " << title << ". ISBN is: " << ISBN << std::endl;
+    std::cout << "Author is " << author << ". Title is: " << title << ". ISBN is: " << ISBN << std::endl;
 }
